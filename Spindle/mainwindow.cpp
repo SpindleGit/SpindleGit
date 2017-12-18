@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    //создание сцены
     QGraphicsScene *scene = new QGraphicsScene;
     scene->setItemIndexMethod(QGraphicsScene::NoIndex); // настраиваем индексацию элементов
     ui->graphicsView->setScene(scene);  // Устанавливаем графическую сцену в graphicsView
