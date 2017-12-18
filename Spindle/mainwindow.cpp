@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QGraphicsPixmapItem>
+#include <QPixmap>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -15,12 +17,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->graphicsView->setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
 
     MoveItem *item = new MoveItem();        // Создаём графический элемента
-       item->setPos(100,    // Устанавливаем случайную позицию элемента
+       item->setPos(100,    // Устанавливаем позицию элемента
                    200);
        scene->addItem(item);   // Добавляем элемент на графическую сцену
-    QImage image("/icon/icon_open.png");
-   // GraphicsPixmapItem item( QPixmap::fromImage(image));
-     //   scene->addItem(&item);
+
+
 }
 
 MainWindow::~MainWindow()

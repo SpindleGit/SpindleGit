@@ -14,7 +14,6 @@ class MoveItem : public QObject, public QGraphicsItem
 public:
     explicit MoveItem(QObject *parent = 0);
     ~MoveItem();
-
 signals:
 
 private:
@@ -23,7 +22,7 @@ private:
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
-
+ QPixmap image1;
 public slots:
 };
 
