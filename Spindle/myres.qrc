@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>icon/icon_add.png</file>
+        <file>icon/icon_code.png</file>
+        <file>icon/icon_copy.png</file>
+        <file>icon/icon_create.png</file>
+        <file>icon/icon_cut.png</file>
+        <file>icon/icon_open.png</file>
+        <file>icon/icon_paste.png</file>
+        <file>icon/icon_save.png</file>
+        <file>icon/icon_save_as.png</file>
+        <file>icon/icon_redo.png</file>
+        <file>icon/icon_undo.png</file>
+        <file>icon/icon_exit.png</file>
+        <file>icon/icon_print.png</file>
+        <file>icon/icon_about_us.png</file>
+        <file>icon/icons_settings.png</file>
+        <file>icon/icon_documentation.png</file>
+        <file>icon/logo.ico</file>
+        <file>icon/icon_examples.png</file>
+    </qresource>
+</RCC>
