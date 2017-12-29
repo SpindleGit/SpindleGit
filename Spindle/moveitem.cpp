@@ -20,10 +20,8 @@ void MoveItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, 
 {
     painter->setPen(Qt::black);
     painter->setBrush(Qt::green);
-
-    //image1.load("../icon_add.ipg");
-    //painter->drawPixmap(0,0,image1);
     painter->drawRect(-30,-30,60,60);
+    //QImage img("../icon/icon_open.png");
 
     Q_UNUSED(option);
     Q_UNUSED(widget);

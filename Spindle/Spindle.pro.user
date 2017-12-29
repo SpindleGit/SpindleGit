@@ -2,6 +2,7 @@
 <!DOCTYPE QtCreatorProject>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- Written by QtCreator 4.5.0, 2017-12-29T18:00:23. -->
 =======
 <!-- Written by QtCreator 4.5.0, 2017-12-18T11:10:48. -->
@@ -9,6 +10,9 @@
 =======
 <!-- Written by QtCreator 4.5.0, 2017-12-18T11:10:48. -->
 >>>>>>> parent of 60421a8... Добавлен коммент
+=======
+<!-- Written by QtCreator 4.5.0, 2017-12-18T13:01:05. -->
+>>>>>>> parent of 4dc6da8... Добавил таблицу свойств элемента
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -1269,6 +1273,7 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Spindle</value>
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Spindle2</value>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1279,6 +1284,10 @@
 =======
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/asyry/Desktop/Qt/Spindle/Spindle.pro</value>
 >>>>>>> parent of 60421a8... Добавлен коммент
+=======
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/asyry/OneDrive/Документы/GitHub/SpindleGit/Spindle/Spindle.pro</value>
+>>>>>>> parent of 4dc6da8... Добавил таблицу свойств элемента
     <value type="bool" key="QmakeProjectManager.QmakeRunConfiguration.UseLibrarySearchPath">true</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">Spindle.pro</value>
