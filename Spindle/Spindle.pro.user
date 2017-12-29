@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
+<<<<<<< HEAD
 <!-- Written by QtCreator 4.5.0, 2017-12-29T18:00:23. -->
+=======
+<!-- Written by QtCreator 4.5.0, 2017-12-18T11:10:48. -->
+>>>>>>> parent of 60421a8... Добавлен коммент
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -1262,7 +1266,11 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Spindle</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Spindle2</value>
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Git/SpindleGit/Spindle/Spindle.pro</value>
+=======
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/asyry/Desktop/Qt/Spindle/Spindle.pro</value>
+>>>>>>> parent of 60421a8... Добавлен коммент
     <value type="bool" key="QmakeProjectManager.QmakeRunConfiguration.UseLibrarySearchPath">true</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">Spindle.pro</value>
