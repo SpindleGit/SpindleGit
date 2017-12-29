@@ -1,22 +1,25 @@
 <RCC>
-    <qresource prefix="/Images">
-        <file>icon/icon_add.png</file>
-        <file>icon/icon_code.png</file>
-        <file>icon/icon_copy.png</file>
-        <file>icon/icon_create.png</file>
-        <file>icon/icon_cut.png</file>
-        <file>icon/icon_open.png</file>
-        <file>icon/icon_paste.png</file>
-        <file>icon/icon_save.png</file>
-        <file>icon/icon_save_as.png</file>
-        <file>icon/icon_redo.png</file>
-        <file>icon/icon_undo.png</file>
-        <file>icon/icon_exit.png</file>
-        <file>icon/icon_print.png</file>
-        <file>icon/icon_about_us.png</file>
-        <file>icon/icons_settings.png</file>
-        <file>icon/icon_documentation.png</file>
-        <file>icon/logo.ico</file>
-        <file>icon/icon_examples.png</file>
+    <qresource prefix="/resources">
+        <file>images/icon/icon_about_us.png</file>
+        <file>images/icon/icon_add.png</file>
+        <file>images/icon/icon_code.png</file>
+        <file>images/icon/icon_copy.png</file>
+        <file>images/icon/icon_create.png</file>
+        <file>images/icon/icon_cut.png</file>
+        <file>images/icon/icon_documentation.png</file>
+        <file>images/icon/icon_examples.png</file>
+        <file>images/icon/icon_exit.png</file>
+        <file>images/icon/icon_open.png</file>
+        <file>images/icon/icon_paste.png</file>
+        <file>images/icon/icon_print.png</file>
+        <file>images/icon/icon_redo.png</file>
+        <file>images/icon/icon_save.png</file>
+        <file>images/icon/icon_save_as.png</file>
+        <file>images/icon/icon_undo.png</file>
+        <file>images/icon/icons_settings.png</file>
+        <file>images/icon/logo.ico</file>
+        <file>images/backgrounds/01.png</file>
+        <file>images/backgrounds/02.jpeg</file>
+        <file>images/backgrounds/03.jpg</file>
     </qresource>
 </RCC>

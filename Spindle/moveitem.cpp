@@ -21,7 +21,12 @@ void MoveItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, 
     painter->setPen(Qt::black);
     painter->setBrush(Qt::green);
     painter->drawRect(-30,-30,60,60);
-    //QImage img("../icon/icon_open.png");
+
+    //QImage image(":/resources/images/icon/icon_add.png");
+    //QPixmap p;
+    //p.fromImage(image);
+    //painter->drawImage((-30,-30,1,1,1,1,image);
+    //painter->drawPixmap(-30,-30,p);
 
     Q_UNUSED(option);
     Q_UNUSED(widget);

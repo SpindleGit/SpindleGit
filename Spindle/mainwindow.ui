@@ -39,7 +39,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="myres.qrc">
-    <normaloff>:/Images/icon/logo.ico</normaloff>:/Images/icon/logo.ico</iconset>
+    <normaloff>:/resources/images/icon/logo.ico</normaloff>:/resources/images/icon/logo.ico</iconset>
   </property>
   <property name="iconSize">
    <size>
@@ -343,13 +343,16 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_add.png</normaloff>:/Images/icon/icon_add.png</iconset>
+     <normaloff>:/resources/images/icon/icon_add.png</normaloff>:/resources/images/icon/icon_add.png</iconset>
    </property>
    <property name="text">
     <string>Создать</string>
    </property>
    <property name="toolTip">
     <string>Создать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
    </property>
    <property name="shortcutContext">
     <enum>Qt::WindowShortcut</enum>
@@ -364,49 +367,61 @@ p, li { white-space: pre-wrap; }
   <action name="action_open">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_open.png</normaloff>:/Images/icon/icon_open.png</iconset>
+     <normaloff>:/resources/images/icon/icon_open.png</normaloff>:/resources/images/icon/icon_open.png</iconset>
    </property>
    <property name="text">
     <string>Открыть</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
    </property>
   </action>
   <action name="action_save">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_save.png</normaloff>:/Images/icon/icon_save.png</iconset>
+     <normaloff>:/resources/images/icon/icon_save.png</normaloff>:/resources/images/icon/icon_save.png</iconset>
    </property>
    <property name="text">
     <string>Сохранить</string>
    </property>
    <property name="toolTip">
     <string>Сохранить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
   </action>
   <action name="action_save_as">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_save_as.png</normaloff>:/Images/icon/icon_save_as.png</iconset>
+     <normaloff>:/resources/images/icon/icon_save_as.png</normaloff>:/resources/images/icon/icon_save_as.png</iconset>
    </property>
    <property name="text">
     <string>Сохранить как</string>
    </property>
    <property name="toolTip">
     <string>Сохранить как</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
    </property>
   </action>
   <action name="action_undo">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_undo.png</normaloff>:/Images/icon/icon_undo.png</iconset>
+     <normaloff>:/resources/images/icon/icon_undo.png</normaloff>:/resources/images/icon/icon_undo.png</iconset>
    </property>
    <property name="text">
     <string>Отменить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
    </property>
   </action>
   <action name="action_redo">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_redo.png</normaloff>:/Images/icon/icon_redo.png</iconset>
+     <normaloff>:/resources/images/icon/icon_redo.png</normaloff>:/resources/images/icon/icon_redo.png</iconset>
    </property>
    <property name="text">
     <string>Повторить</string>
@@ -414,38 +429,50 @@ p, li { white-space: pre-wrap; }
    <property name="toolTip">
     <string>Повторить</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
   </action>
   <action name="action_cut">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_cut.png</normaloff>:/Images/icon/icon_cut.png</iconset>
+     <normaloff>:/resources/images/icon/icon_cut.png</normaloff>:/resources/images/icon/icon_cut.png</iconset>
    </property>
    <property name="text">
     <string>Вырезать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
    </property>
   </action>
   <action name="action_copy">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_copy.png</normaloff>:/Images/icon/icon_copy.png</iconset>
+     <normaloff>:/resources/images/icon/icon_copy.png</normaloff>:/resources/images/icon/icon_copy.png</iconset>
    </property>
    <property name="text">
     <string>Копировать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
    </property>
   </action>
   <action name="action_paste">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_paste.png</normaloff>:/Images/icon/icon_paste.png</iconset>
+     <normaloff>:/resources/images/icon/icon_paste.png</normaloff>:/resources/images/icon/icon_paste.png</iconset>
    </property>
    <property name="text">
     <string>Вставить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
    </property>
   </action>
   <action name="action_magic">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_code.png</normaloff>:/Images/icon/icon_code.png</iconset>
+     <normaloff>:/resources/images/icon/icon_code.png</normaloff>:/resources/images/icon/icon_code.png</iconset>
    </property>
    <property name="text">
     <string>Преобразовать </string>
@@ -454,7 +481,7 @@ p, li { white-space: pre-wrap; }
   <action name="action_settings">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icons_settings.png</normaloff>:/Images/icon/icons_settings.png</iconset>
+     <normaloff>:/resources/images/icon/icons_settings.png</normaloff>:/resources/images/icon/icons_settings.png</iconset>
    </property>
    <property name="text">
     <string>Настройки</string>
@@ -463,7 +490,7 @@ p, li { white-space: pre-wrap; }
   <action name="action_about_us">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_about_us.png</normaloff>:/Images/icon/icon_about_us.png</iconset>
+     <normaloff>:/resources/images/icon/icon_about_us.png</normaloff>:/resources/images/icon/icon_about_us.png</iconset>
    </property>
    <property name="text">
     <string>О программе</string>
@@ -472,25 +499,31 @@ p, li { white-space: pre-wrap; }
   <action name="action_print">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_print.png</normaloff>:/Images/icon/icon_print.png</iconset>
+     <normaloff>:/resources/images/icon/icon_print.png</normaloff>:/resources/images/icon/icon_print.png</iconset>
    </property>
    <property name="text">
     <string>Печать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
    </property>
   </action>
   <action name="action_exit">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_exit.png</normaloff>:/Images/icon/icon_exit.png</iconset>
+     <normaloff>:/resources/images/icon/icon_exit.png</normaloff>:/resources/images/icon/icon_exit.png</iconset>
    </property>
    <property name="text">
     <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
    </property>
   </action>
   <action name="action_documentation">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_documentation.png</normaloff>:/Images/icon/icon_documentation.png</iconset>
+     <normaloff>:/resources/images/icon/icon_documentation.png</normaloff>:/resources/images/icon/icon_documentation.png</iconset>
    </property>
    <property name="text">
     <string>Документация</string>
@@ -499,7 +532,7 @@ p, li { white-space: pre-wrap; }
   <action name="action_examples">
    <property name="icon">
     <iconset resource="myres.qrc">
-     <normaloff>:/Images/icon/icon_examples.png</normaloff>:/Images/icon/icon_examples.png</iconset>
+     <normaloff>:/resources/images/icon/icon_examples.png</normaloff>:/resources/images/icon/icon_examples.png</iconset>
    </property>
    <property name="text">
     <string>Примеры алгоритмов</string>
