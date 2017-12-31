@@ -1,7 +1,7 @@
 #include "moveitem.h"
 
-MoveItem::MoveItem(QObject *parent) :
-    QObject(parent), QGraphicsItem()
+MoveItem::MoveItem(QPixmap &p, QObject *parent ) :
+    QObject(parent), QGraphicsPixmapItem(p)
 {
 
 }
@@ -10,7 +10,7 @@ MoveItem::~MoveItem()
 {
 
 }
-
+/*
 QRectF MoveItem::boundingRect() const
 {
     return QRectF (-30,-30,60,60);
@@ -18,9 +18,9 @@ QRectF MoveItem::boundingRect() const
 
 void MoveItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    painter->setPen(Qt::black);
-    painter->setBrush(Qt::green);
-    painter->drawRect(-30,-30,60,60);
+    //painter->setPen(Qt::black);
+    //painter->setBrush(Qt::green);
+    //painter->drawRect(-30,-30,60,60);
 
     //QImage image(":/resources/images/icon/icon_add.png");
     //QPixmap p;
@@ -31,7 +31,7 @@ void MoveItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, 
     Q_UNUSED(option);
     Q_UNUSED(widget);
 }
-
+*/
 void MoveItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
     /* Устанавливаем позицию графического элемента

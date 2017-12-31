@@ -1,6 +1,12 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "dialog_examples.h"
 #include <QGraphicsPixmapItem>
+#include <QFile>
+#include <QMessageBox>
+#include <QStringList>
+#include <QFileDialog>
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -18,13 +24,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->graphicsView->setCacheMode(QGraphicsView::CacheBackground); // Кэш фона
     ui->graphicsView->setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
 
-   MoveItem *item = new MoveItem();        // Создаём графический элемента
+    QPixmap p(":/resources/images/icon/icon_add.png");
+   MoveItem *item = new MoveItem(p);        // Создаём графический элемента
       item->setPos(100,200);    // Устанавливаем позицию элемента
-      scene->addItem(item);   // Добавляем элемент на графическую сцену
+     scene->addItem(item);   // Добавляем элемент на графическую сцену
 
-   //QGraphicsPixmapItem *pixmapItem = new QGraphicsPixmapItem(QPixmap(":/resources/images/icon/icon_add.png"));
-   // pixmapItem->setTransformationMode(Qt::SmoothTransformation);
-   //scene->addItem(pixmapItem);
+
 
 
 }
@@ -32,4 +37,21 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+// Открытие файла
+void MainWindow::on_action_open_triggered()
+{
+   QString fileName_DATA = QFileDialog::getOpenFileName(this, tr("Открыть файл"),"/home",tr("DATA (*.DATA)"));
+        QFile file(fileName_DATA);
+        if (!file.open(QIODevice::ReadOnly)) {
+
+            return;
+        }
+}
+
+void MainWindow::on_action_examples_triggered()
+{
+   // Dialog_examples d;
+    //d.show();
 }

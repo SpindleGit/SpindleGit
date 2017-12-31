@@ -78,8 +78,8 @@ void *MoveItem::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_MoveItem.stringdata0))
         return static_cast<void*>(this);
-    if (!strcmp(_clname, "QGraphicsItem"))
-        return static_cast< QGraphicsItem*>(this);
+    if (!strcmp(_clname, "QGraphicsPixmapItem"))
+        return static_cast< QGraphicsPixmapItem*>(this);
     return QObject::qt_metacast(_clname);
 }
 

@@ -2,24 +2,24 @@
 #define MOVEITEM_H
 
 #include <QObject>
-#include <QGraphicsItem>
+#include <QGraphicsPixmapItem>
 #include <QPainter>
 #include <QGraphicsSceneMouseEvent>
 #include <QDebug>
 #include <QCursor>
 
-class MoveItem : public QObject, public QGraphicsItem
+class MoveItem : public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
-    explicit MoveItem(QObject *parent = 0);
+    MoveItem(QPixmap &p, QObject *parent = 0);
     ~MoveItem();
 
 signals:
 
 private:
-    QRectF boundingRect() const;
-    void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
+    //QRectF boundingRect() const;
+    //void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
