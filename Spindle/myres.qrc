@@ -21,5 +21,9 @@
         <file>images/backgrounds/01.png</file>
         <file>images/backgrounds/02.jpeg</file>
         <file>images/backgrounds/03.jpg</file>
+        <file>images/items/01.png</file>
+        <file>images/items/02.png</file>
+        <file>images/items/03.png</file>
+        <file>images/items/04.png</file>
     </qresource>
 </RCC>

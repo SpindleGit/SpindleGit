@@ -10,28 +10,7 @@ MoveItem::~MoveItem()
 {
 
 }
-/*
-QRectF MoveItem::boundingRect() const
-{
-    return QRectF (-30,-30,60,60);
-}
 
-void MoveItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
-{
-    //painter->setPen(Qt::black);
-    //painter->setBrush(Qt::green);
-    //painter->drawRect(-30,-30,60,60);
-
-    //QImage image(":/resources/images/icon/icon_add.png");
-    //QPixmap p;
-    //p.fromImage(image);
-    //painter->drawImage((-30,-30,1,1,1,1,image);
-    //painter->drawPixmap(-30,-30,p);
-
-    Q_UNUSED(option);
-    Q_UNUSED(widget);
-}
-*/
 void MoveItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
     /* Устанавливаем позицию графического элемента

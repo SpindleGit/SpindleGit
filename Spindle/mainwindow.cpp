@@ -24,11 +24,50 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->graphicsView->setCacheMode(QGraphicsView::CacheBackground); // Кэш фона
     ui->graphicsView->setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
 
-    QPixmap p(":/resources/images/icon/icon_add.png");
+    //задание размеров объектов items
+    QVector<QSize*> PicSize(4);// размеры объектов items
+    PicSize[0]= new QSize(200,300);
+    PicSize[1]= new QSize(200,300);
+    PicSize[2]= new QSize(150,250);
+    PicSize[3]= new QSize(50,50);
+
+    //адресс директории с png items
+    const QString url_folder=":/resources/images/items/";
+    // вектор адресов подгружаемых png
+    QVector<QString> pics{url_folder+"01.png",
+                          url_folder+"02.png",
+                          url_folder+"03.png",
+                          url_folder+"04.png"};
+
+// выбор картинки items
+    QPixmap p("");
+    int control=0;
+    switch (control) {
+    case 0:p=QPixmap(pics[0]);
+        p = p.scaled(*PicSize[0],Qt::KeepAspectRatio);
+        break;
+    case 1:p=QPixmap(pics[1]);
+        p = p.scaled(*PicSize[1],Qt::KeepAspectRatio);
+        break;
+    case 2:p=QPixmap(pics[2]);
+        p = p.scaled(*PicSize[2],Qt::KeepAspectRatio);
+        break;
+    case 3:p=QPixmap(pics[3]);
+        p = p.scaled(*PicSize[3],Qt::KeepAspectRatio);
+        break;
+    default:
+        break;
+    }
+  ////////////////////////
+
    MoveItem *item = new MoveItem(p);        // Создаём графический элемента
       item->setPos(100,200);    // Устанавливаем позицию элемента
+      item->setTransformationMode(Qt::SmoothTransformation);
      scene->addItem(item);   // Добавляем элемент на графическую сцену
-
+  MoveItem *item2 = new MoveItem(p);        // Создаём графический элемента
+        item2->setPos(100,200);    // Устанавливаем позицию элемента
+        item2->setTransformationMode(Qt::SmoothTransformation);
+       scene->addItem(item2);   // Добавляем элемент на графическую сцену
 
 
 
