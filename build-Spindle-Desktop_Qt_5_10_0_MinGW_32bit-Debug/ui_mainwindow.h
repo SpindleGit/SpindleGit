@@ -16,6 +16,7 @@
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -54,9 +55,17 @@ public:
     QVBoxLayout *verticalLayout_3;
     QToolBox *toolBox_2;
     QWidget *page_type;
+    QHBoxLayout *horizontalLayout_4;
+    QListWidget *listWidget;
     QWidget *page_log_op;
+    QHBoxLayout *horizontalLayout_5;
+    QListWidget *listWidget_2;
     QWidget *page_2_math_op;
+    QHBoxLayout *horizontalLayout_6;
+    QListWidget *listWidget_3;
     QWidget *page_op_con;
+    QHBoxLayout *horizontalLayout_7;
+    QListWidget *listWidget_4;
     QTableWidget *tableWidget;
     QTabWidget *tabWidget;
     QWidget *tap_scheme;
@@ -199,23 +208,94 @@ public:
         page_type = new QWidget();
         page_type->setObjectName(QStringLiteral("page_type"));
         page_type->setGeometry(QRect(0, 0, 300, 110));
+        horizontalLayout_4 = new QHBoxLayout(page_type);
+        horizontalLayout_4->setSpacing(6);
+        horizontalLayout_4->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+        listWidget = new QListWidget(page_type);
+        QIcon icon17;
+        icon17.addFile(QStringLiteral(":/resources/images/items/01.png"), QSize(), QIcon::Normal, QIcon::Off);
+        QListWidgetItem *__qlistwidgetitem = new QListWidgetItem(listWidget);
+        __qlistwidgetitem->setIcon(icon17);
+        listWidget->setObjectName(QStringLiteral("listWidget"));
+
+        horizontalLayout_4->addWidget(listWidget);
+
         toolBox_2->addItem(page_type, QString::fromUtf8("\320\242\320\270\320\277\321\213 \320\264\320\260\320\275\320\275\321\213\321\205"));
         page_log_op = new QWidget();
         page_log_op->setObjectName(QStringLiteral("page_log_op"));
         page_log_op->setGeometry(QRect(0, 0, 300, 110));
+        horizontalLayout_5 = new QHBoxLayout(page_log_op);
+        horizontalLayout_5->setSpacing(6);
+        horizontalLayout_5->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
+        listWidget_2 = new QListWidget(page_log_op);
+        QListWidgetItem *__qlistwidgetitem1 = new QListWidgetItem(listWidget_2);
+        __qlistwidgetitem1->setIcon(icon17);
+        QIcon icon18;
+        icon18.addFile(QStringLiteral(":/resources/images/items/02.png"), QSize(), QIcon::Normal, QIcon::Off);
+        QListWidgetItem *__qlistwidgetitem2 = new QListWidgetItem(listWidget_2);
+        __qlistwidgetitem2->setIcon(icon18);
+        new QListWidgetItem(listWidget_2);
+        listWidget_2->setObjectName(QStringLiteral("listWidget_2"));
+        listWidget_2->setDragEnabled(false);
+        listWidget_2->setDragDropOverwriteMode(true);
+        listWidget_2->setDragDropMode(QAbstractItemView::DragOnly);
+        listWidget_2->setDefaultDropAction(Qt::CopyAction);
+
+        horizontalLayout_5->addWidget(listWidget_2);
+
         toolBox_2->addItem(page_log_op, QString::fromUtf8("\320\233\320\276\320\263\320\270\321\207\320\265\321\201\320\272\320\270\320\265 \320\276\320\277\320\265\321\200\320\260\321\206\320\270\320\270 "));
         page_2_math_op = new QWidget();
         page_2_math_op->setObjectName(QStringLiteral("page_2_math_op"));
         page_2_math_op->setGeometry(QRect(0, 0, 300, 110));
+        horizontalLayout_6 = new QHBoxLayout(page_2_math_op);
+        horizontalLayout_6->setSpacing(6);
+        horizontalLayout_6->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        listWidget_3 = new QListWidget(page_2_math_op);
+        listWidget_3->setObjectName(QStringLiteral("listWidget_3"));
+
+        horizontalLayout_6->addWidget(listWidget_3);
+
         toolBox_2->addItem(page_2_math_op, QString::fromUtf8("\320\234\320\260\321\202\320\265\320\274\320\260\321\202\320\270\321\207\320\265\321\201\320\272\320\270\320\265 \320\276\320\277\320\265\321\200\320\260\321\206\320\270\320\270"));
         page_op_con = new QWidget();
         page_op_con->setObjectName(QStringLiteral("page_op_con"));
         page_op_con->setGeometry(QRect(0, 0, 300, 110));
+        horizontalLayout_7 = new QHBoxLayout(page_op_con);
+        horizontalLayout_7->setSpacing(6);
+        horizontalLayout_7->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
+        listWidget_4 = new QListWidget(page_op_con);
+        listWidget_4->setObjectName(QStringLiteral("listWidget_4"));
+
+        horizontalLayout_7->addWidget(listWidget_4);
+
         toolBox_2->addItem(page_op_con, QString::fromUtf8("\320\236\320\277\320\265\321\200\320\260\321\206\320\270\320\270 \320\275\320\260\320\264 \320\272\320\276\320\275\321\202\320\265\320\271\320\275\320\265\321\200\320\260\320\274\320\270"));
 
         verticalLayout_3->addWidget(toolBox_2);
 
         tableWidget = new QTableWidget(centralWidget);
+        if (tableWidget->columnCount() < 1)
+            tableWidget->setColumnCount(1);
+        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
+        if (tableWidget->rowCount() < 3)
+            tableWidget->setRowCount(3);
+        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(0, __qtablewidgetitem1);
+        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(1, __qtablewidgetitem2);
+        QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(2, __qtablewidgetitem3);
+        QBrush brush(QColor(0, 0, 0, 255));
+        brush.setStyle(Qt::NoBrush);
+        QBrush brush1(QColor(0, 0, 0, 255));
+        brush1.setStyle(Qt::NoBrush);
+        QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
+        __qtablewidgetitem4->setBackground(brush1);
+        __qtablewidgetitem4->setForeground(brush);
+        tableWidget->setItem(2, 0, __qtablewidgetitem4);
         tableWidget->setObjectName(QStringLiteral("tableWidget"));
         QSizePolicy sizePolicy2(QSizePolicy::Maximum, QSizePolicy::Expanding);
         sizePolicy2.setHorizontalStretch(0);
@@ -223,6 +303,32 @@ public:
         sizePolicy2.setHeightForWidth(tableWidget->sizePolicy().hasHeightForWidth());
         tableWidget->setSizePolicy(sizePolicy2);
         tableWidget->setMinimumSize(QSize(300, 0));
+        tableWidget->setMouseTracking(false);
+        tableWidget->setTabletTracking(false);
+        tableWidget->setAcceptDrops(false);
+        tableWidget->setLayoutDirection(Qt::LeftToRight);
+        tableWidget->setAutoFillBackground(false);
+        tableWidget->setSizeAdjustPolicy(QAbstractScrollArea::AdjustIgnored);
+        tableWidget->setAutoScrollMargin(16);
+        tableWidget->setDragEnabled(false);
+        tableWidget->setTextElideMode(Qt::ElideLeft);
+        tableWidget->setVerticalScrollMode(QAbstractItemView::ScrollPerItem);
+        tableWidget->setGridStyle(Qt::SolidLine);
+        tableWidget->setSortingEnabled(false);
+        tableWidget->horizontalHeader()->setVisible(true);
+        tableWidget->horizontalHeader()->setCascadingSectionResizes(true);
+        tableWidget->horizontalHeader()->setDefaultSectionSize(75);
+        tableWidget->horizontalHeader()->setHighlightSections(true);
+        tableWidget->horizontalHeader()->setMinimumSectionSize(30);
+        tableWidget->horizontalHeader()->setProperty("showSortIndicator", QVariant(false));
+        tableWidget->horizontalHeader()->setStretchLastSection(true);
+        tableWidget->verticalHeader()->setVisible(true);
+        tableWidget->verticalHeader()->setCascadingSectionResizes(false);
+        tableWidget->verticalHeader()->setDefaultSectionSize(30);
+        tableWidget->verticalHeader()->setHighlightSections(true);
+        tableWidget->verticalHeader()->setMinimumSectionSize(14);
+        tableWidget->verticalHeader()->setProperty("showSortIndicator", QVariant(false));
+        tableWidget->verticalHeader()->setStretchLastSection(false);
 
         verticalLayout_3->addWidget(tableWidget);
 
@@ -246,6 +352,7 @@ public:
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         graphicsView = new QGraphicsView(tap_scheme);
         graphicsView->setObjectName(QStringLiteral("graphicsView"));
+        graphicsView->setDragMode(QGraphicsView::NoDrag);
 
         horizontalLayout_2->addWidget(graphicsView);
 
@@ -335,7 +442,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        toolBox_2->setCurrentIndex(3);
+        toolBox_2->setCurrentIndex(1);
         tabWidget->setCurrentIndex(0);
 
 
@@ -394,6 +501,9 @@ public:
         action_paste->setShortcut(QApplication::translate("MainWindow", "Ctrl+V", nullptr));
 #endif // QT_NO_SHORTCUT
         action_magic->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\265\320\276\320\261\321\200\320\260\320\267\320\276\320\262\320\260\321\202\321\214 ", nullptr));
+#ifndef QT_NO_SHORTCUT
+        action_magic->setShortcut(QApplication::translate("MainWindow", "Ctrl+M", nullptr));
+#endif // QT_NO_SHORTCUT
         action_settings->setText(QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270", nullptr));
         action_about_us->setText(QApplication::translate("MainWindow", "\320\236 \320\277\321\200\320\276\320\263\321\200\320\260\320\274\320\274\320\265", nullptr));
         action_print->setText(QApplication::translate("MainWindow", "\320\237\320\265\321\207\320\260\321\202\321\214", nullptr));
@@ -406,10 +516,41 @@ public:
 #endif // QT_NO_SHORTCUT
         action_documentation->setText(QApplication::translate("MainWindow", "\320\224\320\276\320\272\321\203\320\274\320\265\320\275\321\202\320\260\321\206\320\270\321\217", nullptr));
         action_examples->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\270\320\274\320\265\321\200\321\213 \320\260\320\273\320\263\320\276\321\200\320\270\321\202\320\274\320\276\320\262", nullptr));
+
+        const bool __sortingEnabled = listWidget->isSortingEnabled();
+        listWidget->setSortingEnabled(false);
+        QListWidgetItem *___qlistwidgetitem = listWidget->item(0);
+        ___qlistwidgetitem->setText(QApplication::translate("MainWindow", "\320\235\320\276\320\262\321\213\320\271 \321\215\320\273\320\265\320\274\320\265\320\275\321\202", nullptr));
+        listWidget->setSortingEnabled(__sortingEnabled);
+
         toolBox_2->setItemText(toolBox_2->indexOf(page_type), QApplication::translate("MainWindow", "\320\242\320\270\320\277\321\213 \320\264\320\260\320\275\320\275\321\213\321\205", nullptr));
+
+        const bool __sortingEnabled1 = listWidget_2->isSortingEnabled();
+        listWidget_2->setSortingEnabled(false);
+        QListWidgetItem *___qlistwidgetitem1 = listWidget_2->item(0);
+        ___qlistwidgetitem1->setText(QApplication::translate("MainWindow", "\320\235\320\276\320\262\321\213\320\271 \321\215\320\273\320\265\320\274\320\265\320\275\321\202", nullptr));
+        QListWidgetItem *___qlistwidgetitem2 = listWidget_2->item(1);
+        ___qlistwidgetitem2->setText(QApplication::translate("MainWindow", "\320\235\320\276\320\262\321\213\320\271 \321\215\320\273\320\265\320\274\320\265\320\275\321\202", nullptr));
+        QListWidgetItem *___qlistwidgetitem3 = listWidget_2->item(2);
+        ___qlistwidgetitem3->setText(QApplication::translate("MainWindow", "\320\235\320\276\320\262\321\213\320\271 \321\215\320\273\320\265\320\274\320\265\320\275\321\202", nullptr));
+        listWidget_2->setSortingEnabled(__sortingEnabled1);
+
         toolBox_2->setItemText(toolBox_2->indexOf(page_log_op), QApplication::translate("MainWindow", "\320\233\320\276\320\263\320\270\321\207\320\265\321\201\320\272\320\270\320\265 \320\276\320\277\320\265\321\200\320\260\321\206\320\270\320\270 ", nullptr));
         toolBox_2->setItemText(toolBox_2->indexOf(page_2_math_op), QApplication::translate("MainWindow", "\320\234\320\260\321\202\320\265\320\274\320\260\321\202\320\270\321\207\320\265\321\201\320\272\320\270\320\265 \320\276\320\277\320\265\321\200\320\260\321\206\320\270\320\270", nullptr));
         toolBox_2->setItemText(toolBox_2->indexOf(page_op_con), QApplication::translate("MainWindow", "\320\236\320\277\320\265\321\200\320\260\321\206\320\270\320\270 \320\275\320\260\320\264 \320\272\320\276\320\275\321\202\320\265\320\271\320\275\320\265\321\200\320\260\320\274\320\270", nullptr));
+        QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
+        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "\320\227\320\275\320\260\321\207\320\265\320\275\320\270\320\265", nullptr));
+        QTableWidgetItem *___qtablewidgetitem1 = tableWidget->verticalHeaderItem(0);
+        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "\320\230\320\274\321\217", nullptr));
+        QTableWidgetItem *___qtablewidgetitem2 = tableWidget->verticalHeaderItem(1);
+        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "\320\242\320\265\320\272\321\201\321\202", nullptr));
+        QTableWidgetItem *___qtablewidgetitem3 = tableWidget->verticalHeaderItem(2);
+        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "\320\246\320\262\320\265\321\202", nullptr));
+
+        const bool __sortingEnabled2 = tableWidget->isSortingEnabled();
+        tableWidget->setSortingEnabled(false);
+        tableWidget->setSortingEnabled(__sortingEnabled2);
+
         tabWidget->setTabText(tabWidget->indexOf(tap_scheme), QApplication::translate("MainWindow", "\320\241\321\205\320\265\320\274\320\260", nullptr));
         textEdit->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"

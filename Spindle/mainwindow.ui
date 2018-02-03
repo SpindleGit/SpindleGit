@@ -81,7 +81,7 @@
          </size>
         </property>
         <property name="currentIndex">
-         <number>3</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="page_type">
          <property name="geometry">
@@ -95,6 +95,21 @@
          <attribute name="label">
           <string>Типы данных</string>
          </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QListWidget" name="listWidget">
+            <item>
+             <property name="text">
+              <string>Новый элемент</string>
+             </property>
+             <property name="icon">
+              <iconset resource="myres.qrc">
+               <normaloff>:/resources/images/items/01.png</normaloff>:/resources/images/items/01.png</iconset>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
         </widget>
         <widget class="QWidget" name="page_log_op">
          <property name="geometry">
@@ -108,6 +123,47 @@
          <attribute name="label">
           <string>Логические операции </string>
          </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QListWidget" name="listWidget_2">
+            <property name="dragEnabled">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>true</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::DragOnly</enum>
+            </property>
+            <property name="defaultDropAction">
+             <enum>Qt::CopyAction</enum>
+            </property>
+            <item>
+             <property name="text">
+              <string>Новый элемент</string>
+             </property>
+             <property name="icon">
+              <iconset resource="myres.qrc">
+               <normaloff>:/resources/images/items/01.png</normaloff>:/resources/images/items/01.png</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Новый элемент</string>
+             </property>
+             <property name="icon">
+              <iconset resource="myres.qrc">
+               <normaloff>:/resources/images/items/02.png</normaloff>:/resources/images/items/02.png</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Новый элемент</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
         </widget>
         <widget class="QWidget" name="page_2_math_op">
          <property name="geometry">
@@ -121,6 +177,11 @@
          <attribute name="label">
           <string>Математические операции</string>
          </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QListWidget" name="listWidget_3"/>
+          </item>
+         </layout>
         </widget>
         <widget class="QWidget" name="page_op_con">
          <property name="geometry">
@@ -134,6 +195,11 @@
          <attribute name="label">
           <string>Операции над контейнерами</string>
          </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QListWidget" name="listWidget_4"/>
+          </item>
+         </layout>
         </widget>
        </widget>
       </item>
@@ -151,6 +217,127 @@
           <height>0</height>
          </size>
         </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="tabletTracking">
+         <bool>false</bool>
+        </property>
+        <property name="acceptDrops">
+         <bool>false</bool>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustIgnored</enum>
+        </property>
+        <property name="autoScrollMargin">
+         <number>16</number>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="textElideMode">
+         <enum>Qt::ElideLeft</enum>
+        </property>
+        <property name="verticalScrollMode">
+         <enum>QAbstractItemView::ScrollPerItem</enum>
+        </property>
+        <property name="gridStyle">
+         <enum>Qt::SolidLine</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>false</bool>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>75</number>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>30</number>
+        </attribute>
+        <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>30</number>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderMinimumSectionSize">
+         <number>14</number>
+        </attribute>
+        <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>Имя</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Текст</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Цвет</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Значение</string>
+         </property>
+        </column>
+        <item row="2" column="0">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="background">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </property>
+         <property name="foreground">
+          <brush brushstyle="NoBrush">
+           <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </property>
+        </item>
        </widget>
       </item>
      </layout>
@@ -187,7 +374,11 @@
        </attribute>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QGraphicsView" name="graphicsView"/>
+         <widget class="QGraphicsView" name="graphicsView">
+          <property name="dragMode">
+           <enum>QGraphicsView::NoDrag</enum>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -476,6 +667,9 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="text">
     <string>Преобразовать </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
    </property>
   </action>
   <action name="action_settings">

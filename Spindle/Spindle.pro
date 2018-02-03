@@ -27,12 +27,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     dialog_examples.cpp \
-    moveitem.cpp
+    moveitem.cpp \
+    magicscene.cpp
 
 HEADERS += \
         mainwindow.h \
     dialog_examples.h \
-    moveitem.h
+    moveitem.h \
+    magicscene.h
 
 FORMS += \
         mainwindow.ui \

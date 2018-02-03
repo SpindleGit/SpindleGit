@@ -38,3 +38,4 @@ void MoveItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event)
     this->setCursor(QCursor(Qt::ArrowCursor));
     Q_UNUSED(event);
 }
+
